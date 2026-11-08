@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080B12;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    border-bottom: 1px solid #202633;
+}
+
+header h2 {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+header span {
+    color: #8893A5;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.eyebrow {
+    color: #8492A6;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 8vw, 85px);
+    max-width: 900px;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #829BC2;
+}
+
+.subtitle {
+    color: #AAB4C5;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.scroll {
+    margin-top: 65px;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    border: 1px solid #384458;
+    padding: 16px 25px;
+    transition: 0.3s;
+}
+
+.scroll:hover {
+    background: #829BC2;
+    color: #080B12;
+}
+
+/* LEGACY SECTION */
+
+.legacy {
+    min-height: 85vh;
+    padding: 120px 20px;
+    text-align: center;
+    background: #0D121D;
+}
+
+.legacy h2 {
+    font-size: clamp(35px, 6vw, 60px);
+    margin-bottom: 20px;
+}
+
+.legacy > p:not(.eyebrow):not(.disclaimer) {
+    color: #AAB4C5;
+    line-height: 1.7;
+}
+
+/* TIKTOK PROFILE */
+
+.profile {
+    max-width: 500px;
+    margin: 50px auto 0;
+    padding: 45px 25px;
+    background: #151D2B;
+    border: 1px solid #29364A;
+    border-radius: 12px;
+}
+
+.profile h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.profile p {
+    color: #AAB4C5;
+    margin-bottom: 30px;
+}
+
+.profile a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    border: 1px solid #829BC2;
+    transition: 0.3s;
+}
+
+.profile a:hover {
+    background: #829BC2;
+    color: #080B12;
+}
+
+/* FOOTER */
+
+.disclaimer {
+    color: #65748A;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 55px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    color: #65748A;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #829BC2;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px rgba(130, 155, 194, 0.2);
+    transition: 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(130, 155, 194, 0.5);
+}
